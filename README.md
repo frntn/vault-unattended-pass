@@ -16,6 +16,7 @@ Vault and the secrets-gen plugin is automatically downloaded in project director
 ```bash
 $ ./demo.sh
 ```
+![screencast](https://media.githubusercontent.com/media/frntn/vault-unattended-pass/master/demo.gif)
 
 ----
 
