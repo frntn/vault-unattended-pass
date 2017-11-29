@@ -91,9 +91,8 @@ EOF
 
 # --------------------------------------------------------------------------- vault server: init, unseal, auth
 
-sleep 2
 nohup ./bin/vault server -config=etc/vault/config.hcl &
-sleep 5
+sleep 3
 
 vault init -key-shares=1 -key-threshold=1                  \
     | tee                                                  \
@@ -131,3 +130,5 @@ $ ./bin/vault write gen/password length=20 symbols=0
 
 See https://github.com/sethvargo/vault-secrets-gen
 "
+
+sleep 5
